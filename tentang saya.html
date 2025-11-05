@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Saya</title>
+    <link rel="stylesheet" href="tentang saya.css" />
+    <link rel="menu" href="menu.html" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header class="top-bar"></header>
+    <div class="menu-icon">☰</div>
+
+    <nav class="menu">
+      <a href="index.html">Beranda</a>
+      <a href="tentang saya.html" class="active">Tentang Saya</a>
+      <a href="artikel.html">Artikel</a>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="about-container">
+      <h1>Tentang Saya</h1>
+
+      <img src="Sally.png" alt="Foto Saya" class="profile-photo" />
+
+      <h2 class="name-title">Sally Shane</h2>
+
+      <p class="bio-text">
+        Halo nama saya Sally Shane dari kelas secondary 2B dan saya adalah
+        penulis artikel tentang keberagaman yang ada di Indonesia.
+      </p>
+    </section>
+
+    <!-- Flower Decoration -->
+    <img src="blue flowers.png" class="flowers left" />
+    <img src="blue flowers.png" class="flowers right" />
+
+    <script>
+      document.querySelector(".menu-icon").onclick = () => {
+        document.querySelector(".menu").classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>

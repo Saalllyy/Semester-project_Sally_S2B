@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Awal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<div class="menu-wrapper">
+  <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+
+  <div class="menu-dropdown" id="menuDropdown">
+      <a href="index.html">Beranda</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="tentang-saya.html">Tentang Saya</a>
+  </div>
+</div>
+
+<h1>Selamat Datang di Halaman Awal</h1>
+<p>Ini isi halaman awal kamu 😊</p>
+
+<script>
+function toggleMenu() {
+  document.getElementById("menuDropdown").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
+
+

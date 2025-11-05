@@ -1,0 +1,100 @@
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #b8e3ff, #e6b9ff);
+}
+
+/* Top Bar */
+.top-bar {
+  width: 100%;
+  height: 60px;
+  background: #6655ff;
+}
+
+/* Menu Button (Hamburger) */
+.menu-icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 35px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Menu List */
+nav.menu {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: white;
+  border-radius: 10px;
+  width: 180px;
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+
+nav.menu.open {
+  display: flex;
+}
+
+nav.menu a {
+  text-decoration: none;
+  padding: 10px;
+  color: #4a4a4a;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+nav.menu a:hover,
+nav.menu a.active {
+  background: #c7b5ff;
+  color: white;
+}
+nav {
+  background: #4a90e2;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section {
+  padding: 30px;
+}
+
+.content-box {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+img.round {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: right;
+  margin-left: 20px;
+}
+img.square {
+  width: 350px;
+  height: 300px;
+  border-radius: 20px;
+  float: right;
+  margin-left: 20px;
+}

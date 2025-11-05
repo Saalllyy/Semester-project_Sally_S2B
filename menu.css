@@ -1,0 +1,45 @@
+.menu-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-btn {
+  background: #c46aff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-dropdown {
+  display: none;
+  flex-direction: column;
+  background: #ffffff;
+  border: 2px solid #c46aff;
+  border-radius: 10px;
+  position: absolute;
+  top: 55px;
+  padding: 10px;
+  width: 180px;
+}
+
+.menu-dropdown a {
+  text-decoration: none;
+  color: #c46aff;
+  font-size: 18px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.menu-dropdown a:hover {
+  background: #f3dbff;
+  border-radius: 8px;
+}
+
+/* Agar muncul kalau ditekan */
+.show {
+  display: flex;
+}
