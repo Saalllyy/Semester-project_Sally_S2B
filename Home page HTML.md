@@ -1,79 +1,128 @@
 <!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Selamat datang di laman Sally</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&family=Poppins:wght@300;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laman Sally</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page" role="main">
-      <div class="topbar" aria-hidden="true">
-        <div class="menu" role="button" aria-label="Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html">Beranda</a>
+      <a href="artikel.html">Artikel</a>
+      <a href="tentang saya.html">Tentang saya</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Selamat datang di laman Sally!</h1>
+      <p>
+        Di artikel ini kalian bisa mengetahui apa saja keberagaman yang ada di
+        Indonesia
+      </p>
+
+      <!-- ✅ Container khusus gambar & tombol -->
+      <div class="content-box">
+        <img
+          src="indonesia kids.png"
+          alt="anak-anak Indonesia"
+          class="center-img"
+        />
+        <a class="btn" href="artikel.html">Baca artikel</a>
       </div>
+    </section>
 
-      <div class="container">
-        <h1>Selamat datang di laman Sally!</h1>
-        <p class="lead">
-          Di artikel ini kalian bisa mengetahui apa saja keberagaman yang ada di
-          Indonesia
-        </p>
-
-        <div class="center-image" aria-hidden="false">
-          <!-- Replace the src with your cartoon/group image. -->
-          <img src="indonesia-kids.png" alt="Kids in Traditional Costume">
-        </div>
-
-        <a class="cta" href="#artikel">Baca artikel</a>
-
-        <div class="preview" id="artikel" aria-label="Preview artikel"></div>
-      </div>
-
-      <!-- decorative flowers (simple inline SVGs) -->
-      <div class="flower-row" aria-hidden="true">
-        <div class="flower-left">
-          <img src="blue-flowers.png" alt="Blue Flowers" />
-            <g fill="none" fill-rule="evenodd">
-              <ellipse cx="70" cy="120" rx="40" ry="22" fill="#cfe6ff" />
-              <circle cx="40" cy="90" r="28" fill="#c6d9ff" />
-              <circle cx="100" cy="70" r="30" fill="#bcd6ff" />
-              <path
-                d="M20 50 C40 30, 90 20, 110 40"
-                stroke="#8aa"
-                stroke-width="4"
-                stroke-linecap="round"
-                fill-opacity="0"
-              />
-            </g>
-          </svg>
-        </div>
-
-        <div class="flower-right">
-          <img src="blue-flowers.png" alt="Blue Flowers" />
-            <g fill="none" fill-rule="evenodd">
-              <ellipse cx="230" cy="120" rx="40" ry="22" fill="#cfe6ff" />
-              <circle cx="210" cy="90" r="28" fill="#c6d9ff" />
-              <circle cx="260" cy="70" r="30" fill="#bcd6ff" />
-              <path
-                d="M180 50 C200 30, 250 20, 270 40"
-                stroke="#8aa"
-                stroke-width="4"
-                stroke-linecap="round"
-                fill-opacity="0"
-              />
-            </g>
-          </svg>
-        </div>
-      </div>
-    </div>
-
+    <!-- Flowers -->
+    <img src="blue flower left.png" alt="bunga kiri" class="flower left" />
+    <img src="blue flowers.png" alt="bunga kanan" class="flower right" />
   </body>
 </html>
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #e3f5ff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  background: linear-gradient(to right, #00fff2, #f047ff);
+  padding: 15px;
+  font-weight: bold;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #4c38ff;
+  font-size: 18px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  color: #a60cff;
+}
+
+.hero h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #d883ff;
+  margin-bottom: 20px;
+}
+
+/* ✅ Pusatkan gambar & tombol benar2 */
+.content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* IMAGE */
+.center-img {
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #ffc1e3;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.btn {
+  background: #ffb6e5;
+  color: white;
+  padding: 12px 35px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff8dcc;
+}
+
+/* ✅ Flowers bottom left & right */
+.flower {
+  position: fixed;
+  bottom: 0;
+  width: 200px;
+  z-index: -1;
+}
+
+.flower.left {
+  left: 0;
+}
+
+.flower.right {
+  right: 0;
+}
